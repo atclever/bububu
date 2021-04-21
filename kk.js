@@ -4,9 +4,8 @@ const $ = new Env(`番茄看看前台自动阅读`);
     let body = `
     <h1 id='tips'></h1>
     <script>
-    let times = 5;
-    (document.getElementById('tips') || {}).innerHTML = times+'秒后自动返回完成阅读';
-    setTimeout(()=>window.history.back(),times*1000);
+    (document.getElementById('tips') || {}).innerHTML = '5秒后自动返回完成阅读';
+    setTimeout(()=>window.history.back(),5000);
     </script>`
     setTimeout(()=>window.history.back(),5000);
     const headers = {
