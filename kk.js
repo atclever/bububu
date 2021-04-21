@@ -8,7 +8,7 @@ const $ = new Env(`番茄看看前台自动阅读`);
     (document.getElementById('tips') || {}).innerHTML = times+'秒后自动返回完成阅读';
     setTimeout(()=>window.history.back(),times*1000);
     </script>`
-    setTimeout(()=>window.history.back(),times*1000);
+    setTimeout(()=>window.history.back(),5000);
     const headers = {
       "Connection": "Close",
       'Content-Type': 'text/html; charset=utf-8'
