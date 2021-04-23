@@ -4,10 +4,10 @@ const $ = new Env(`番茄看看前台自动阅读`);
     let body = `
     <h1 id='tips'></h1>
     <script>
-    (document.getElementById('tips') || {}).innerHTML = '5秒后自动返回完成阅读';
-    setTimeout(()=>window.history.back(),5000);
+    (document.getElementById('tips') || {}).innerHTML = '6秒后自动返回完成阅读';
+    setTimeout(()=>window.history.back(),6000);
     </script>`
-    setTimeout(()=>window.history.back(),5000);
+    setTimeout(()=>window.history.back(),6000);
     const headers = {
       "Connection": "Close",
       'Content-Type': 'text/html; charset=utf-8'
